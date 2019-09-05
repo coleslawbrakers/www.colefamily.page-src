@@ -3,9 +3,11 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+    - mkdir -p public
+    - cp -a src/* public/
+    - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -exec gzip -f -k {} \;
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
