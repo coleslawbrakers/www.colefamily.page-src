@@ -1,11 +1,12 @@
-image: alpine:latest
+image: monachus/hugo
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
 
 pages:
   stage: deploy
   script:
-    - mkdir -p public
-    - cp -a src/* public/
-    - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -exec gzip -f -k {} \;
+    - hugo
   artifacts:
     paths:
       - public

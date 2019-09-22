@@ -1,0 +1,12 @@
+[submodule "themes/hyde"]
+	path = themes/hyde
+	url = https://github.com/getzola/hyde.git
+[submodule "themes/dinkleberg"]
+	path = themes/dinkleberg
+	url = git@github.com:rust-br/dinkleberg.git
+[submodule "themes/zen"]
+	path = themes/zen
+	url = https://github.com/frjo/hugo-theme-zen.git
+[submodule "themes/gohugo-theme-ananke"]
+	path = themes/gohugo-theme-ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
