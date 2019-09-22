@@ -13,4 +13,4 @@ pages:
   only:
     - master
   after_script:
-    - "curl -X DELETE 'https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache' -H 'Authorization: Bearer $CLOUDFLARE_TOKEN' -H 'Content-type: application/json' --data '{\"purge_everything\": true}'"
+    - "curl -X DELETE \"https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache\" -H \"Authorization: Bearer $CLOUDFLARE_TOKEN\" -H 'Content-type: application/json' --data '{\"purge_everything\": true}'"
