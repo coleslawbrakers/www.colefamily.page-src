@@ -1,7 +1,6 @@
 ---
 title: "Frequently Asked Questions"
 omit_header_text: true
-draft: true
 
 ---
 

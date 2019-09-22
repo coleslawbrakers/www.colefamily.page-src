@@ -1,0 +1,34 @@
+title: "Cole Family"
+theme: "ananke-mod"
+baseURL: "https://www.colefamily.page"
+languageCode: "en-us"
+DefaultContentLanguage: "en"
+SectionPagesMenu: "main"
+MetaDataFormat: "yaml"
+
+params:
+  favicon: ""
+  description: "Cole's Law Brakers' Travel Blog"
+  background_color_class: "bg-black"
+  featured_image: "/images/rv-bg.jpg"
+  mainSections:
+    - posts
+
+menu:
+  main:
+    - identifier: "posts"
+      name: "Posts"
+      title: "Posts"
+      url: "/posts/"
+      weight: -120
+    - identifier: "faq"
+      name: "Frequently Asked Questions"
+      title: "Frequently Asked Questions"
+      url: "/faq/"
+      weight: -110
+    - identifier: "map"
+      name: "Route Map"
+      title: "Route Map and Current Location"
+      url: "/map/"
+      weight: -100
+
