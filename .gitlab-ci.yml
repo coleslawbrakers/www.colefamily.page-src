@@ -1,3 +1,5 @@
+image: registry.gitlab.com/pages/hugo/hugo_extended:0.58.3
+
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
@@ -7,11 +9,15 @@ stages:
   - deploy
   - trigger
 
-pages:
-  stage: deploy
-  image: registry.gitlab.com/pages/hugo/hugo_extended:0.58.3
+build:
+  stage: build
   script:
     - hugo
+  only:
+    - master
+
+pages:
+  stage: deploy
   artifacts:
     paths:
       - public
