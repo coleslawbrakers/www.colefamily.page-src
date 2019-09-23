@@ -1,7 +1,9 @@
 image: registry.gitlab.com/pages/hugo/hugo_extended:0.58.3
 
 variables:
+  GIT_STRATEGY: clone
   GIT_SUBMODULE_STRATEGY: recursive
+  GIT_DEPTH: "1"
 
 stages:
   - build
@@ -19,6 +21,8 @@ hugo:
     - master
 
 pages:
+  variables:
+    GIT_STRATEGY: none
   stage: deploy
   script:
     - echo deploying...
@@ -31,6 +35,8 @@ pages:
     - master
 
 clear_caches:
+  variables:
+    GIT_STRATEGY: none
   stage: trigger
   dependencies:
     - pages
