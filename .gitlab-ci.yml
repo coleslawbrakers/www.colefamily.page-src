@@ -9,7 +9,7 @@ stages:
   - deploy
   - trigger
 
-build:
+hugo:
   stage: build
   script:
     - hugo
