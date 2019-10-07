@@ -1,9 +1,5 @@
 language: minimal
 
-cache:
-  directories:
-   - /home/travis/.my_cache
-
 env:
   - HUGO_VER=0.58.3
   - HUGO_SHA1=e1c75f8566d8a755f9fce410b6c8b50560345163
@@ -11,6 +7,12 @@ env:
 git:
   submodules: true
   depth: 1
+
+cache:
+  directories:
+    - ${HOME}/.my_cache
+before_cache:
+    - "echo ${HUGO_SHA1} ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz | sha1sum --check || rm -f ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz"
 
 stages:
   - name: prepare
@@ -23,18 +25,19 @@ stages:
 jobs:
   include:
     - stage: prepare
-      before_script:
-        - "mkdir -p $HOME/.my_cache/download"
-        - "mkdir -p $HOME/bin"
-        - "export PATH=$HOME/bin:$PATH"
-        - "test -f $HOME/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz || curl -L -o $HOME/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER}/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz"
       script:
-        - "echo $HUGO_SHA1 $HOME/.my_cache/download/hugo_extended_0.58.3_Linux-64bit.tar.gz | sha1sum --check"
-        - "tar -xzvf $HOME/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz -C $HOME/bin hugo"
+        - "mkdir -p ${HOME}/.my_cache/download"
+        - "mkdir -p ${HOME}/bin"
+        - "export PATH=${HOME}/bin:$PATH"
+        - "test -f ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz || curl -L -o ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER}/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz"
+        - "echo ${HUGO_SHA1} ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz | sha1sum --check"
+        - "tar -xzvf ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz -C ${HOME}/bin hugo"
     - stage: build
-      script: $HOME/bin/hugo
+      script:
+        - "${HOME}/bin/hugo"
     - stage: deploy
-      script: echo $GITHUB_DEPLOY_KEY | base64 -d > $HOME/.github_deploy.key
+      script:
+        - "echo ${GITHUB_DEPLOY_KEY} | base64 -d > ${HOME}/.github_deploy.key"
       deploy:
         provider: pages
         edge: true
@@ -42,10 +45,10 @@ jobs:
         repo: coleslawbrakers/colefamily.page
         local_dir: public
         skip_cleanup: true
-        deploy_key: $HOME/.github_deploy.key
+        deploy_key: ${HOME}/.github_deploy.key
         keep_history: true
         on:
           branch: master
         verbose: true
     - stage: trigger
-      script: "curl -X DELETE \"https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache\" -H \"Authorization: Bearer $CLOUDFLARE_TOKEN\" -H 'Content-type: application/json' --data '{\"purge_everything\": true}'"
+      script: "curl -X DELETE \"https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE}/purge_cache\" -H \"Authorization: Bearer ${CLOUDFLARE_TOKEN}\" -H 'Content-type: application/json' --data '{\"purge_everything\": true}'"
