@@ -2,6 +2,7 @@
 omit_header_text: true
 date: 2019-09-21
 title: Cole’s Law Brakers - Living on the Road
+author: Rebecca Cole
 
 ---
 

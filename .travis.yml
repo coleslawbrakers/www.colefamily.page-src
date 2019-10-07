@@ -1,0 +1,33 @@
+image: registry.gitlab.com/pages/hugo/hugo_extended:0.58.3
+
+git:
+  submodules: true
+  depth: 1
+
+stages:
+  - build
+  - name: deploy
+    if: branch = master
+  - name: trigger
+    if: branch = master
+
+jobs:
+  include:
+    - stage: build
+      install: apk --no-cache add curl
+      script: hugo
+    - stage: deploy
+      deploy:
+        provider: pages
+        edge: true
+        fqdn: colefamily.page
+        repo: coleslawbrakers/colefamily.page
+        local_dir: public
+        skip_cleanup: true
+        deploy_key: $GITHUB_TOKEN
+        keep_history: true
+        on:
+          branch: master
+        verbose: true
+    - stage: trigger
+      script: "curl -X DELETE \"https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache\" -H \"Authorization: Bearer $CLOUDFLARE_TOKEN\" -H 'Content-type: application/json' --data '{\"purge_everything\": true}'"
