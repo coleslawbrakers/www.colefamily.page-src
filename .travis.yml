@@ -1,11 +1,19 @@
-image: registry.gitlab.com/pages/hugo/hugo_extended:0.58.3
+language: minimal
+
+cache:
+  directories:
+   - /home/travis/.my_cache
+
+env:
+  - HUGO_VER=0.58.3
 
 git:
   submodules: true
   depth: 1
 
 stages:
-  - build
+  - name: prepare
+  - name: build
   - name: deploy
     if: branch = master
   - name: trigger
@@ -13,10 +21,18 @@ stages:
 
 jobs:
   include:
+    - stage: prepare
+      before_script:
+        - "mkdir -p $HOME/.my_cache/download"
+        - "mkdir -p $HOME/bin"
+        - "export PATH=$HOME/bin:$PATH"
+        - "test -f $HOME/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz || curl -o $HOME/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER}/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz"
+      script:
+        - "tar -xzvf $HOME/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz -C $HOME/bin hugo"
     - stage: build
-      install: apk --no-cache add curl
-      script: hugo
+      script: $HOME/bin/hugo
     - stage: deploy
+      script: echo $GITHUB_DEPLOY_KEY | base64 -d > /home/travis/.github_deploy.key
       deploy:
         provider: pages
         edge: true
@@ -24,7 +40,7 @@ jobs:
         repo: coleslawbrakers/colefamily.page
         local_dir: public
         skip_cleanup: true
-        deploy_key: $GITHUB_TOKEN
+        deploy_key: /home/travis/.github_deploy.key
         keep_history: true
         on:
           branch: master
