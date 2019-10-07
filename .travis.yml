@@ -1,8 +1,9 @@
 language: minimal
 
 env:
-  - HUGO_VER=0.58.3
-  - HUGO_SHA1=e1c75f8566d8a755f9fce410b6c8b50560345163
+  global:
+    - HUGO_VER=0.58.3
+    - HUGO_SHA1=e1c75f8566d8a755f9fce410b6c8b50560345163
 
 git:
   submodules: true
@@ -12,7 +13,7 @@ cache:
   directories:
     - ${HOME}/.my_cache
 before_cache:
-    - "echo ${HUGO_SHA1} ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz | sha1sum --check || rm -f ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz"
+    - "echo ${HUGO_SHA1} ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz | sha1sum --check --status || rm -f ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz"
 
 stages:
   - name: prepare
