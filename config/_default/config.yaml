@@ -1,16 +1,26 @@
 title: "Cole Family"
 theme: "ananke-mod"
 baseURL: "https://www.colefamily.page"
+relativeURLs: true
+canonifyURLs: true
 languageCode: "en-us"
 DefaultContentLanguage: "en"
 SectionPagesMenu: "main"
 MetaDataFormat: "yaml"
+buildDrafts: false
+buildFuture: true
+buildExpired: false
+enableGitInfo: true
+publishDir: "public"
+enableRobotsTXT: true
+rssLimit: 10
+uglyURLs: true
 
 params:
   favicon: ""
   description: "Cole's Law Brakers' Travel Blog"
   background_color_class: "bg-black"
-  featured_image: "/images/rv-bg.jpg"
+  featured_image: "images/rv-bg.jpg"
   mainSections:
     - posts
 
