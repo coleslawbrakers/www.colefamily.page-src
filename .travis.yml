@@ -15,41 +15,26 @@ cache:
 before_cache:
     - "echo ${HUGO_SHA1} ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz | sha1sum --check --status || rm -f ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz"
 
-stages:
-  - name: prepare
-  - name: build
-  - name: deploy
-    if: branch = master
-  - name: trigger
-    if: branch = master
-
-jobs:
-  include:
-    - stage: prepare
-      script:
-        - "mkdir -p ${HOME}/.my_cache/download"
-        - "mkdir -p ${HOME}/bin"
-        - "export PATH=${HOME}/bin:$PATH"
-        - "test -f ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz || curl -L -o ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER}/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz"
-        - "echo ${HUGO_SHA1} ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz | sha1sum --check"
-        - "tar -xzvf ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz -C ${HOME}/bin hugo"
-    - stage: build
-      script:
-        - "${HOME}/bin/hugo"
-    - stage: deploy
-      script:
-        - "echo ${GITHUB_DEPLOY_KEY} | base64 -d > ${HOME}/.github_deploy.key"
-      deploy:
-        provider: pages
-        edge: true
-        fqdn: colefamily.page
-        repo: coleslawbrakers/colefamily.page
-        local_dir: public
-        skip_cleanup: true
-        deploy_key: ${HOME}/.github_deploy.key
-        keep_history: true
-        on:
-          branch: master
-        verbose: true
-    - stage: trigger
-      script: "curl -X DELETE \"https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE}/purge_cache\" -H \"Authorization: Bearer ${CLOUDFLARE_TOKEN}\" -H 'Content-type: application/json' --data '{\"purge_everything\": true}'"
+before_script:
+  - "mkdir -p ${HOME}/.my_cache/download ${HOME}/bin"
+  - "test -f ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz || curl -L -o ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER}/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz"
+  - "echo ${HUGO_SHA1} ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz | sha1sum --check"
+  - "tar -xzvf ${HOME}/.my_cache/download/hugo_extended_${HUGO_VER}_Linux-64bit.tar.gz -C ${HOME}/bin hugo"
+script:
+  - "${HOME}/bin/hugo"
+before_deploy:
+  - "echo ${GITHUB_DEPLOY_KEY} | base64 -d > ${HOME}/.github_deploy.key"
+deploy:
+  provider: pages
+  edge: true
+  fqdn: colefamily.page
+  repo: coleslawbrakers/colefamily.page
+  local_dir: public
+  skip_cleanup: true
+  deploy_key: ${HOME}/.github_deploy.key
+  keep_history: true
+  on:
+    branch: master
+  verbose: true
+after_deploy:
+  - "curl -X DELETE \"https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE}/purge_cache\" -H \"Authorization: Bearer ${CLOUDFLARE_TOKEN}\" -H 'Content-type: application/json' --data '{\"purge_everything\": true}'"
