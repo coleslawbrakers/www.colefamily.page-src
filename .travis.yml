@@ -32,8 +32,8 @@ before_deploy:
 deploy:
   provider: pages
   edge: true
-  fqdn: colefamily.page
-  repo: coleslawbrakers/colefamily.page
+  fqdn: www.colefamily.page
+  repo: coleslawbrakers/www.colefamily.page
   target_branch: master
   local_dir: public
   skip_cleanup: true
