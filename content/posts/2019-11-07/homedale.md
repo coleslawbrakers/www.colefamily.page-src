@@ -29,6 +29,6 @@ Ezri is almost through eating all of her candy, her favorites have been lollipop
 
 ![sucker](sucker.jpg)
 
-We moved onward to Walla Walla Washington on November 2nd, and so far it's been great as well, we'll have more updates soon! ( Don't forget to checkout out the [Route Map](/map/) link for current location and planned stops)
+We moved onward to Walla Walla Washington on November 2nd, and so far it's been great as well, we'll have more updates soon! (Don't forget to checkout the [Route Map](/map/) link for current location and planned stops)
 
 ![route](route.png)
