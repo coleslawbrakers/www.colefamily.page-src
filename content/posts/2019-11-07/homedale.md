@@ -21,7 +21,7 @@ James and Ezri created a Jack-O-Lantern together on the Saturday before Hallowee
 
 For Halloween, they have a trick or treat event where businesses throughout their downtown area opt in to handing out candy. It worked out great for us because we didn't have to intrude on a neighborhood we weren't really a part of. She was pretty shy for most of it, and only spoke to one adult who was dressed up as a butterfly. She definitely was understanding the concept though, and would hold out her bucket for each place we stopped.!
 
-![mirror](mirror.jpg)[costume](costume.jpg)
+![mirror](mirror.jpg)![costume](costume.jpg)
 
 Ezri is almost through eating all of her candy, her favorites have been lollipops by far, but she also liked gummy bears and skittles a lot. I'm looking forward to when she finishes her candy; I haven't been able to keep up with all the sticky hand prints she's been putting on the furniture.
 
