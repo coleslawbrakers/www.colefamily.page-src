@@ -14,6 +14,8 @@ We decided to stay at the [Snake River Resort RV](https://snakeriverrv.com/) par
 
 In Boise, we visited a Children's Museum, which was much more of a toy collection than a museum, so right up Ezri's alley. She loved playing on a horse that you press down on the 'stirrups' to move forward, and had to spend time hugging all of the stuffed animals in their play vet's office. She also enjoyed the Magna Tiles, especially destroying any creation I put together.
 
+![horse](horse.gif)
+
 We also went to [The Warhawk Air Museum](https://warhawkairmuseum.org/) in Nampa, which turned out to be a little too hands-off for Ezri (note from James: *definitely check it out if you like restored warbirds, especially the P40, my favorite. They had an incredible amount of historical information.*). They did have 2 sealed domes with gloves attached that are like the ones sometimes used in space to perform experiments when the chemicals involved can be dangerous to the people or equipment. They had a Duplo set inside one, and a Lego set inside the other. Ezri enjoyed trying to grab the pieces with the giant gloves, but also kept trying to get the pieces out by pulling them through the glove holes.
 
 James and Ezri created a Jack-O-Lantern together on the Saturday before Halloween, and we did a trunk or treat on the Sunday. 
