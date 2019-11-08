@@ -19,7 +19,7 @@ We also went to [The Warhawk Air Museum](https://warhawkairmuseum.org/) in Nampa
 James and Ezri created a Jack-O-Lantern together on the Saturday before Halloween, and we did a trunk or treat on the Sunday. 
 ![pumpkin-collage](pumpkin-collage.jpg)![pumpkin](pumpkin.jpg)
 
-For Halloween, they have a trick or treat event where businesses throughout their downtown area opt in to handing out candy. It worked out great for us because we didn't have to intrude on a neighborhood we weren't really a part of. She was pretty shy for most of it, and only spoke to one adult who was dressed up as a butterfly. She definitely was understanding the concept though, and would hold out her bucket for each place we stopped.!
+For Halloween, they have a trick or treat event where businesses throughout their downtown area opt in to handing out candy. It worked out great for us because we didn't have to intrude on a neighborhood we weren't really a part of. She was pretty shy for most of it, and only spoke to one adult who was dressed up as a butterfly. She definitely was understanding the concept though, and would hold out her bucket for each place we stopped.
 
 ![mirror](mirror.jpg)![costume](costume.jpg)
 
