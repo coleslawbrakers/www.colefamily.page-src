@@ -7,7 +7,7 @@ featured_image: posts/2020-04-11/pacificcity_rock.jpg
 
 ---
 
-*Note: Apologies, this is a couple weeks late, next post about Joseph, OR up shortly.*
+*Note: Apologies, this is a little late, it was written on April 3rd; the next post about Joseph, OR will be forthcoming.*
 
 Our last few weeks in Fall City didn't go as we had planned, as we got a call in the middle of the night that James's step-mom, Kim, had passed away. Luckily James's work has paid bereavement leave and my work can be flexible, allowing us to fly out to Tennessee to support his dad. The funeral was beautiful, and we were able to catch up with friends and family we didn't see during our Christmas trip out there. We were all shocked by her passing, and will miss her. 
 
@@ -44,7 +44,7 @@ Our drive to the next stop, Cascade Locks, Oregon, was only about 3 hours. Since
 
 ![cascadelocks](cascadelocks.jpg)
 
-We've in Cascade Locks for about a week and half, and will be leaving on Saturday. Technically the RV park we are in is closed, but the owners aren't kicking out people like us who aren't vacationers. The RV Park is right next to the railroad tracks, and while the trains were exciting initially, they run most often during the night and have woken us all up several times. We're looking forward to getting a quiet night's sleep at the next place. We are disappointed we haven't really had an opportunity to check out the area or culture much, we can see some amazing cycling/walking/jogging trails by the highway and the maps show many trail-heads, but the weather has been a bit rainy and cold whenever we have the time to go, and the trail-heads look like they are closed anyway.
+We've been in Cascade Locks for about a week and a half, and will be leaving on Saturday. Technically the RV park we are in is closed, but the owners aren't kicking out people like us who aren't vacationers. The RV Park is right next to the railroad tracks, and while the trains were exciting initially, they run most often during the night and have woken us all up several times. We're looking forward to getting a quiet night's sleep at the next place. We are disappointed we haven't really had an opportunity to check out the area or culture much, we can see some amazing cycling/walking/jogging trails by the highway and the maps show many trail-heads, but the weather has been a bit rainy and cold whenever we have the time to go, and the trail-heads look like they are closed anyway.
 
 ![cascadelocks2](cascadelocks2.jpg)
 
