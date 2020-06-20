@@ -38,7 +38,12 @@ menu:
       weight: -110
     - identifier: "map"
       name: "Route Map"
-      title: "Route Map and Current Location"
+      title: "Route Map"
       url: "/map/"
       weight: -100
+    - identifier: "plan"
+      name: "Route Plan"
+      title: "Route Plan"
+      url: "/plan/"
+      weight: -90
 
