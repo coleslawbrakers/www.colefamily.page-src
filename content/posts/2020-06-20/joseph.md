@@ -19,7 +19,7 @@ Joseph has a very walkable, picturesque Main Street we both ran and walked up an
 
 ![ezri_horses](ezri_horses.jpg)
 
-Our first month, we were almost the only ones in the RV park, but after that we got some lovely neighbors who we had a lot of fun talking with, Anna and Joanne (from 6 feet of course!). We have missed having close connections while on the road, and it was so nice to make some friends. They also gave me an awesome haircut as a parting gift, which I'm really enjoying.
+Our first month, we were almost the only ones in the RV park, but after that we got some lovely neighbors who we had a lot of fun talking with, Anna and Jeanne (from 6 feet of course!). We have missed having close connections while on the road, and it was so nice to make some friends. They also gave me an awesome haircut as a parting gift, which I'm really enjoying.
 
 ![anna_joanne](anna_joanne.jpg)
 
@@ -30,6 +30,8 @@ We had Easter in Joseph, and were worried Ezri would miss having other kids arou
 ![easter](easter.jpg)
 
 With Ezri getting a little older, I've been able to start doing more projects, so I've made a few masks for us, as well as 2 dresses for Ezri. I've restarted a half-done knitting project too, and am looking forward to wrapping it up and starting on another.
+
+![mask](mask.jpg)
 
 ![dress](dress.jpg)
 
