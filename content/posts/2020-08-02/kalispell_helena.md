@@ -83,4 +83,6 @@ I took Ezri to the Black Sandy State Park on the edge of Lake Helena and spent a
 
 ![helena_lake](helena_lake.jpg)
 
+![ezri_helena_pbj](ezri_helena_pbj.jpg)
+
 Unfortunately, while Helena was nice and the people were friendly, it was just too deserty. While there, though, we heard from multiple people that we HAD to check out Bozeman, Montana. We were able to finagle the schedule, and that is our next stop.
