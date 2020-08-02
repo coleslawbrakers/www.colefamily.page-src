@@ -53,7 +53,7 @@ Glacier National Park is one of the reasons a lot of people would see Kalispell,
 
 ![river_bucket](river_bucket.jpg)
 
-The day before we had to leave town, James got up super early and rode his bike up the 'Going to the Sun Road', as they allow bicycles while it is still closed to cars. It was about 42 miles round trip, but the steep part was 3000 feet of climing in 10 miles. You can see his [Strava ride here with a lot more pictures](https://www.strava.com/activities/3747732304) than just those below.
+The day before we had to leave town, James got up super early and rode his bike up the 'Going to the Sun Road', as they allow bicycles while it is still closed to cars. It was about 42 miles round trip, but the steep part was 3000 feet of climbing in 10 miles. You can see his [Strava ride here with a lot more pictures](https://www.strava.com/activities/3747732304) than just those below.
 
 ![glacier2](glacier2.jpg)
 
@@ -69,7 +69,9 @@ The day after we left Kalispell, they opened the rest of Glacier to cars. I'm bu
 
 ### Helena, Montana
 
-![helena_a](helena_a.jpg)Next stop was Helena, Montana, for 2 weeks. This one was added by me, as looking online, I thought this was a real potential candidate. Helena is the capitol of Montana, and was at one point the richest city in the state due to successful mining operations. There are some beautiful old houses and buildings in their downtown area, and they have a walkable section that is closed off to cars and lined with cute shops and restaurants. We bought a few more games for Ezri than we probably should have at a toy store there, and I bought a half pound of chocolates at a chocolate shop that I'm now trying to not to eat all at once.
+![helena_a](helena_a.jpg)
+
+Next stop was Helena, Montana, for 2 weeks. This one was added by me, as looking online, I thought this was a real potential candidate. Helena is the capitol of Montana, and was at one point the richest city in the state due to successful mining operations. There are some beautiful old houses and buildings in their downtown area, and they have a walkable section that is closed off to cars and lined with cute shops and restaurants. We bought a few more games for Ezri than we probably should have at a toy store there, and I bought a half pound of chocolates at a chocolate shop that I'm now trying to not to eat all at once.
 
 Helena has an average of 300 sunny days a year, so it's dry and the natural vegetation tends more towards sagebrush than trees or grasses. Some of the lots we looked at were up at the edge of the mountains and reminded me a lot of Mt. Charleston outside of Las Vegas.
 
