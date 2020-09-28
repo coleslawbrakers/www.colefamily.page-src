@@ -105,7 +105,7 @@ Lead has a very vibrant Arts community, and there is even a Makerspace in the pr
 
 ![lead_makerspace](lead_makerspace.jpg)
 
-An antique piece of Artwork in a church that is now an Crafts Shop:
+An antique piece of Artwork in a church that is now an Arts & Crafts shop:
 
 ![lead_arts](lead_arts.jpg)
 
