@@ -7,7 +7,9 @@ featured_image: posts/2020-09-28/cover.jpg
 
 ---
 
-![blackhills_ezri](blackhills_ezri.jpg)While we stayed mostly in Deadwood, the whole area needs to be taken into account, so I've broken up some of this by city. This area has a lot of history so I'll include some as it's really necessary to see why we chose to visit and why it is now our top spot on our ranking.
+![blackhills_ezri](blackhills_ezri.jpg)
+
+While we stayed mostly in Deadwood, the whole area needs to be taken into account, so I've broken up some of this by city. This area has a lot of history so I'll include some as it's really necessary to see why we chose to visit and why it is now our top spot on our ranking.
 
 ### Spearfish
 
