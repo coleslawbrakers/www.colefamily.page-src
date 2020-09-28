@@ -133,7 +133,7 @@ We also went to a dinosaur museum that was more scientific, but Ezri got a bit s
 
 One thing we found really odd is that the hotels in the area are apparently competing for who has the longest water-slide. Signs like '146 foot water-slide' were on each hotel we went past, with the water-slides jutting out from a corner of the hotel. I'm not sure if this is a pretty normal thing, but it was a first for us.
 
-Rapid City has all your big city amenities, like target and several sporting goods stores. There's no Costco, but that's not really something that's very high up on our lists anyway.
+Rapid City has all your big city amenities, like Target and several sporting goods stores. There's no Costco, but that's not really something that's very high up on our lists anyway.
 
 ### Next Stop
 
