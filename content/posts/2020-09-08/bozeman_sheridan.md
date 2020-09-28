@@ -21,7 +21,9 @@ After that, we moved to Bear Canyon Campground for the rest of our stay, on the 
 
 ![sunset_ezri](sunset_ezri.jpg)
 
-Bozeman has a great walkable downtown with good restaurants, so that was a definite plus. Parking could be a little challenging, but that comes with a more populous area.
+Bozeman has a great walkable downtown with good restaurants, so that was a definite plus. Parking could be a little challenging, but that comes with a more populous area.\
+
+![bookstore](bookstore.jpg)
 
 We went to the Museum of the Rockies twice while in Bozeman, Ezri has been really obsessed with bones lately (learning their names, asking if other people/animals have them, wanting me to take mine out so she can touch them, you know, normal stuff). Luckily they have a big collection of dinosaur bones, as well as reptile exhibits and an old homestead to tour. There's also a planetarium star show, and with limited capacity due to distancing, we had to plan our second visit specifically to make the show. We got about 2 minutes in when the darkness and video of the inside of your head made Ezri too freaked out to continue. Maybe we'll try a show like that again in a few years.
 
